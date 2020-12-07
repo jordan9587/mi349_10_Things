@@ -1,6 +1,6 @@
 const submitButton = document.getElementById("button");
 
-var post = new Object();
+var post = {};
 
 submitButton.onclick = function () {
     post.title = document.getElementById("title").value;
@@ -18,23 +18,23 @@ post.displayDetails = function()
     document.body.appendChild(node);
     document.getElementById("myPosts").appendChild(node);
 
-    var node = document.createElement("LI");
+    var node2 = document.createElement("LI");
     var addAuthour = document.createTextNode("Authour: " + post.authour);
-    node.appendChild(addAuthour);
-    document.body.appendChild(node);
-    document.getElementById("myPosts").appendChild(node);
+    node2.appendChild(addAuthour);
+    document.body.appendChild(node2);
+    document.getElementById("myPosts").appendChild(node2);
 
-    var node = document.createElement("LI");
+    var node3 = document.createElement("LI");
     var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
     var addDate = document.createTextNode("Date: " + utc);
-    node.appendChild(addDate);
-    document.body.appendChild(node);
-    document.getElementById("myPosts").appendChild(node);
+    node3.appendChild(addDate);
+    document.body.appendChild(node3);
+    document.getElementById("myPosts").appendChild(node3);
 
-    var node = document.createElement("LI");
+    var node4 = document.createElement("LI");
     var addContent= document.createTextNode("Content: " + post.content);
-    node.appendChild(addContent);    
-    document.body.appendChild(node);
-    document.getElementById("myPosts").appendChild(node);
+    node4.appendChild(addContent);    
+    document.body.appendChild(node4);
+    document.getElementById("myPosts").appendChild(node4);
     
 };
