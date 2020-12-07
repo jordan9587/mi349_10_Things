@@ -1,0 +1,85 @@
+
+html { 	
+    background: #9ACD32;
+}
+
+body {
+    /* body is inheriting from html */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Add spacing from the edge of the window itself. */
+    margin: 40px;
+    /* Adds spacing inside the centre block. */
+    padding: 40px;
+    color: #242424;
+    border-top: 10px solid #242424;
+    background: #fff;
+    position: relative;
+}
+
+h1 {
+    /* padding and margin are not being inherited from body. Layout patterns and properties are not inherited.
+    While text, colour and font sizing are inherited. */
+    /* font-size: 3em;
+    margin: 0;
+    */
+
+    color: #111;
+    line-height: 1;
+    font-family: 'Helvetica Neue', sans-serif; font-size: 120px;
+    letter-spacing: -1px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+p {
+    line-height: 1.4em;
+    color: #111;     
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 14px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+}
+
+textarea {
+    width: 50%;
+    height: 120px;
+    margin: 2px 0 20px 10px;
+    border: solid 1px #9ACD32;
+}
+
+input {
+    display: block;
+    font-size: 8px;
+    border: solid 1px #9ACD32;
+    margin: 2px 0 20px 10px;
+    padding: 8px 8px;
+    width: 30%;
+}
+
+
+.buttons {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+
+#content, #title #authour {
+    display: block;
+    border: solid 1px #9ACD32;
+    margin: 2px 0 20px 10px;
+    font-size: 8px;
+    padding: 8px 8px;
+}
+
+input[type="button"] {
+    width: 120px;
+    margin-left: 12px;
+    display: block;
+}
+
+#myPosts li {
+    list-style-type: none;
+}

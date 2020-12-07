@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Each HTML file (index.html and about.html) should have the same header section (they are part of the same site)-->
+    <header>
+        <h1>Jordan Hybki's Blog</h1>
+        <!-- Each HTML file (index.html and about.html) should have the same navigation section (they are part of the same site)-->
+    </header> 
+
+    <section id="contact">
+        <ul id="myPosts"></ul>
+
+
+        <h2>Create a Blog Post:</h2>
+        <form>
+            <!--In contact.html, create a contact form with the following fields: Name, Email address, Reason for contact (drop down menu): saying hi, looking for a contractor, interested in an interview, Textarea for open comment and Submit button-->
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter title of blog here...">
+
+            <label for="authour">Authour:</label>
+            <input type="text" id="authour" name="authour" placeholder="Enter authour of blog here...">
+            
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" placeholder="Enter content here..." rows = "20" cols = "40"></textarea>
+
+            <button id = "button" type="button">Publish Blog</button>
+
+        </form>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
